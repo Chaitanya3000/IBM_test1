@@ -23,6 +23,34 @@ def home():
 
     return render_template("home.html", user=current_user)
 
+@views.route('/Underweight')
+def underweight():
+    return render_template("Underweight.html", user=current_user)
+
+@views.route('/Overweight')
+def overweight():
+    return render_template("Overweight.html", user=current_user)
+
+@views.route('/Wasting')
+def Wasting():
+    return render_template("Wasting.html", user=current_user)
+
+@views.route('/Severewasting')
+def Severewasting():
+    return render_template("Severewasting.html", user=current_user)
+
+@views.route('/Stunting')
+def Stunting():
+    return render_template("Stunting.html", user=current_user)
+
+@views.route('/ABM')
+def ABM():
+    return render_template("ABM.html", user=current_user)
+
+@views.route('/AboutUs')
+def AboutUs():
+    return render_template("AboutUs.html", user=current_user)
+
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():  
