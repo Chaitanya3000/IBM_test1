@@ -31,7 +31,7 @@
       data-bs-theme="dark"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">Malnutrition</a>
+        <a class="navbar-brand" href="#">Online Education</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,7 +45,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            {% if user.is_authenticated %}
+            <!-- {% if user.is_authenticated %} -->
             <li class="nav-item">
               <a class="nav-item nav-link" id="home" href="/">Home</a>
             </li>
@@ -57,38 +57,29 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Different Malnutrition
+              Analysis
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="/Overweight">OverWeight</a>
+                  <a class="dropdown-item" href="/Overweight">Study Habits</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/Underweight">UnderWeight</a>
+                  <a class="dropdown-item" href="/Underweight">Comparative</a>
                 </li>
-                <li><a class="dropdown-item" href="/Wasting">Wasting</a></li>
                 <li>
                   <a class="dropdown-item" href="/Severewasting"
-                    >Severe Wasting</a
+                    >Overview</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="/Stunting">Stunting</a></li>
+                <li><a class="dropdown-item" href="/Stunting">Performance</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" id="logout" href="/ABM"
-                >About Malnutrition</a
-              >
             </li>
             <li class="nav-item">
               <a class="nav-item nav-link" id="logout" href="/AboutUs"
                 >About Us</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
-            </li>
-            {% else %}
+            <!-- {% else %}
             <li class="nav-item">
               <a class="nav-item nav-link" id="login" href="/login">Login</a>
             </li>
@@ -97,7 +88,7 @@
                 >Sign Up</a
               >
             </li>
-            {% endif %}
+            {% endif %} -->
           </ul>
         </div>
       </div>
